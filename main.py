@@ -240,10 +240,10 @@ def display_intro():
     """
 
     # Display the ASCII art and intro text
-    print(logo)
-    print(intro_text)
+    print_slow(logo)
+    print_slow(intro_text)
     print(bookshelf)
-    print(intro_text2)
+    print_slow(intro_text2)
 
 
 # %%
@@ -504,9 +504,10 @@ start_time = time.time()
 
 # %%
 # Loading the game
-print_slow("You wake up in a dark, cold room. You have no memory of how you got here.")
-print_slow("You notice shelves filled with old, dusty books lining the walls but don't know how you got here.")
-print_slow("The air is thick with dust, and the only light comes from a flickering bulb hanging from the ceiling.")
+display_intro()
+# print_slow("You wake up in a dark, cold room. You have no memory of how you got here.")
+# print_slow("You notice shelves filled with old, dusty books lining the walls but don't know how you got here.")
+# print_slow("The air is thick with dust, and the only light comes from a flickering bulb hanging from the ceiling.")
 print_slow(f"Something seems off for sure... It is best to be out of here in {timer_duration // 60} minutes.")
 print_slow("In case you are unsure what to do, type 'help'.")
 
