@@ -240,9 +240,9 @@ def display_intro():
     """
 
     # Display the ASCII art and intro text
-    print_slow(logo)
+    print_slow("\033[31m" + logo + "\033[0m")
     print_slow(intro_text)
-    print(bookshelf)
+    print("\033[33m" + bookshelf + "\033[0m")
     print_slow(intro_text2)
 
 
